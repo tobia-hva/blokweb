@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Alyssa Tobi
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw :)
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Ik denk dat ik mijn focus meer op surface plane wil richten, maar ik weet nog niet of dat de beste keuze voor mij is.
  
 </details>
 
@@ -37,14 +37,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+  https://www.nike.com/nl/
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepage   
+  <img src="readme-images/homepage-nike.png" width="375px" alt="homepage van de nike website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Member Shop voor dames
+  <img src="readme-images/webshop-members-dames.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
