@@ -34,7 +34,7 @@
 
 body{
     color:white;
-    background-image: url(./images/background-home1.jpg);
+    background-image: url(../images/background-home1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     font-family: arvo, serif;
