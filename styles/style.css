@@ -29,3 +29,157 @@
 
 /* jouw code */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body{
+    color:white;
+    background-image: url(./images/background-home1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: arvo, serif;
+}
+
+h2{
+    text-align: center;
+    color:rgb(255,228,106);
+    text-shadow: 0em 0.1em 0.5em black;
+    font-size: 1em;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+div{
+    height: 36em;
+    background-color: aqua;
+    opacity: 0.5;
+}
+.red-nav-wrap{
+    background-color:rgb(230,0,19);
+    height:3.2em;
+    width: 24em;
+    padding: 0%;
+    margin-left:-1em;
+    margin-top: -1em;
+    display:flex;
+    
+}
+
+ .red-nav-wrap img{
+    width: auto;
+    height: 2em;
+    margin: 0.9em 0em 0em 2em;
+}
+
+.account-icon{
+width: auto;
+height: 1em;
+}
+
+.red-nav-wrap a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    margin-left: 6em;
+}
+
+.reduce-motionbar{
+    background-color:rgb(255,228,106);
+    height: 2.3em;
+    width:29.8em;
+    margin-left: -1em;
+    text-transform:uppercase;
+    font-size: 0.8em;
+    color: rgb(130,75,21);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.birthday{
+    font-size: 1.2em;
+    color: white;
+    margin-top: -0.6em;
+    text-shadow: 0em 0.1em 0.5em black;
+}
+
+.character-birthday{
+    width: 10em;
+}
+
+.animal-crossing-news-1{
+    font-family: arvo, serif;
+    color:rgb(130,75,21);
+    background-color:white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22em 0em 0em 0.5em;
+    width: 21.5em;
+    height: 24em;
+   
+    
+}
+
+.animal-crossing-news-2, .animal-crossing-news-3{
+    font-family: arvo, serif;
+    color:rgb(130,75,21);
+    background-color:white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2em 0em 0em 0.5em;
+    width: 21.5em;
+    height: 22.7em;
+}
+
+.button-home{
+    background-color: rgb(196,22,27);
+    color: rgb(255,228,106);
+    padding: 0.8em 2em 0.8em 2em;
+    text-decoration: none;   
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: center;
+    margin: 2em 5em 6em 5em;
+    
+}
+
+.video{
+    width:18em;
+    height:12em;
+    margin: 0em 2.2em 0em 2em;
+}
+
+.arrow-left{
+    width: 1em;
+    height: 1em;
+}
+.arrow-right{
+    width: 1em;
+    height: 1em;
+}
+
+button{
+    background: rgb(196,22,27);
+    border: none;
+    border-radius: 40%;
+    padding: 1.2em;
+    margin: -0.8em -9em 2em 9.6em;
+}
