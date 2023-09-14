@@ -16,13 +16,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Alyssa Tobi
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
-
+  Mijn startniveau is blauw
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Ik ga me tijdens deze opdracht richten op surface plane.
  
 </details>
 
@@ -36,15 +35,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://animalcrossing.nintendo.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/animalCrossing-home1.jpg" width="375px" alt="homepage van de animal crossing website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/animalCrossing-2ePagina.jpg" width="375px" alt="homepage van de animal crossing: New Horizons website">
  
 </details>
 
@@ -57,7 +56,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  Ik heb de checklist doorlopen en kwam erachter dat mijn site best goed scoorde. De pagina's die ik na wil maken hebben niet echt punten waar je tegenaan loopt qua toegankelijkheid als je bijvoorbeeld kijkt naar kleurenblind zijn of andere beperkingen qua zicht. Voor de rest was de lay-out zelf in mijn ogen ook toegankelijk op zowel desktop als mobiele versie. 
 </details>
 
 
@@ -68,7 +67,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
