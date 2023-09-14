@@ -20,6 +20,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je startniveau:
   Mijn startniveau is blauw
+
   #### Je focus:
   Ik ga me tijdens deze opdracht richten op surface plane.
  
@@ -43,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/animalCrossing-2ePagina.jpg" width="375px" alt="homepage van de animal crossing: New Horizons website">
+  <img src="readme-images/animalCrossing-2ePagina.jpg" width="375px" alt="homepage van de animal crossing: new horizons website">
  
 </details>
 
@@ -56,7 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  Ik heb de checklist doorlopen en kwam erachter dat mijn site best goed scoorde. De pagina's die ik na wil maken hebben niet echt punten waar je tegenaan loopt qua toegankelijkheid als je bijvoorbeeld kijkt naar kleurenblind zijn of andere beperkingen qua zicht. Voor de rest was de lay-out zelf in mijn ogen ook toegankelijk op zowel desktop als mobiele versie. 
+   Ik heb de checklist doorlopen en kwam erachter dat mijn site best goed scoorde. De pagina's die ik na wil maken hebben niet echt punten waar je tegenaan loopt qua toegankelijkheid als je bijvoorbeeld kijkt naar kleurenblind zijn of andere beperkingen qua zicht. Voor de rest was de lay-out zelf in mijn ogen ook toegankelijk op zowel desktop als mobiele versie.
 </details>
 
 
