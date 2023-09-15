@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -30,7 +32,7 @@
 /* jouw code */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 
 body{
     color:white;
@@ -57,7 +59,6 @@ p{
 
 div{
     height: 36em;
-    background-color: aqua;
     opacity: 0.5;
 }
 .red-nav-wrap{
@@ -128,9 +129,10 @@ height: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 22em 0em 0em 0.5em;
+    margin: 11.5em 0em 0em 0.5em;
     width: 21.5em;
     height: 24em;
+
    
     
 }
@@ -144,12 +146,12 @@ height: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1.2em 0em 0em 0.5em;
+    margin: 1.2em 0em 1em 0.5em;
     width: 21.5em;
     height: 22.7em;
 }
 
-.button-home{
+.button-home, .animal-crossing-NH a{
     background-color: rgb(196,22,27);
     color: rgb(255,228,106);
     padding: 0.8em 2em 0.8em 2em;
@@ -157,23 +159,8 @@ height: 1em;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
-    margin: 2em 5em 6em 5em;
+    margin: 0em 5em 0em 5em;
     
-}
-
-.video{
-    width:18em;
-    height:12em;
-    margin: 0em 2.2em 0em 2em;
-}
-
-.arrow-left{
-    width: 1em;
-    height: 1em;
-}
-.arrow-right{
-    width: 1em;
-    height: 1em;
 }
 
 button{
@@ -182,4 +169,67 @@ button{
     border-radius: 40%;
     padding: 1.2em;
     margin: -0.8em -9em 2em 9.6em;
+}
+
+.video{
+    width:18em;
+    height:12em;
+    margin: 4em 2.2em 0.5em 2em;
+}
+
+.arrow-button{
+    width: 1em;
+    height: 1em;
+}
+
+
+
+.animal-crossing-NH{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animal-crossing-NH h2{
+color:rgb(130,75,21);
+text-shadow: none;
+font-weight: bold;
+margin-bottom: -0.2em;
+}
+.animal-crossing-NH p{
+    color:rgb(130,75,21);
+    font-size: 1em;
+    width: 20em;
+    text-align: center;
+    }
+
+.featured-ac-games{
+    height: 45em;
+}
+.featured-ac-games h2{
+    color: rgb(130,75,21);
+    text-shadow: none;
+    font-size: 1.8em;
+    padding-top: 3.8em;
+}
+.featured-ac-games article{
+    background-color: white;
+    color: rgb(130,75,21);
+    border-radius:5%;
+    width: 20em;
+    height: 19em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.featured-ac-games h4{
+    color:rgb(2,127,135);
+
+}
+.featured-ac-games img{
+    border-radius: 0.5em;
+    width: 19em;
+    margin-top:1.5em ;
 }
