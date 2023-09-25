@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:wght@100;300;400&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Franklin:wght@100;300;400&family=Viga&display=swap');
 /**************/
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
-
-
-
 
 
 /*********************/
@@ -22,59 +19,37 @@
 }
 
 
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
-
-
-
-
 body{
     color:white;
-    background-image: url(../images/background-home1.jpg);
+    background-image: url(../images/background-home1.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     font-family: arvo, serif;
-}
-
-h2{
-    text-align: center;
-    color:rgb(255,228,106);
-    text-shadow: 0em 0.1em 0.5em black;
-    font-size: 1em;
-}
-
-h3{
-    text-align: center;
-}
-
-p{
     text-align: center;
 }
 
 div{
-    height: 36em;
+    height: 30em;
     opacity: 0.5;
 }
 .red-nav-wrap{
     background-color:rgb(230,0,19);
-    height:3.2em;
+    height:3.4em;
     width: 24em;
     padding: 0%;
     margin-left:-1em;
     margin-top: -1em;
-    display:flex;
-    
+    display:flex; 
 }
 
  .red-nav-wrap img{
     width: auto;
-    height: 2em;
+    height: 1.5em;
     margin: 0.9em 0em 0em 2em;
 }
 
@@ -107,8 +82,6 @@ height: 1em;
     align-items: center;
 }
 
-
-
 .birthday{
     font-size: 1.2em;
     color: white;
@@ -119,8 +92,14 @@ height: 1em;
 .character-birthday{
     width: 10em;
 }
+.birthday h2{
+    text-align: center;
+    color:rgb(255,228,106);
+    text-shadow: 0em 0.1em 0.5em black;
+    font-size: 1em;
+}
 
-.animal-crossing-news-1{
+.animal-crossing-news-1 {
     font-family: arvo, serif;
     color:rgb(130,75,21);
     background-color:white;
@@ -129,16 +108,14 @@ height: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 11.5em 0em 0em 0.5em;
+    margin: 8em 0em 0em 0.5em;
     width: 21.5em;
-    height: 24em;
-
-   
-    
+    height: 24em;   
 }
 
-.animal-crossing-news-2, .animal-crossing-news-3{
+.animal-crossing-news-2{
     font-family: arvo, serif;
+    text-decoration: none;
     color:rgb(130,75,21);
     background-color:white;
     border-radius: 5%;
@@ -151,7 +128,18 @@ height: 1em;
     height: 22.7em;
 }
 
-.button-home, .animal-crossing-NH a{
+.animal-crossing-news-1 a, .animal-crossing-news-2 a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(196,22,27);
+}
+.animal-crossing-news-1 img, .animal-crossing-news-2 img{
+   border-radius: 0.8em;
+   width: 20em;
+}
+
+.button-home a{
+    font-weight: 700;
     background-color: rgb(196,22,27);
     color: rgb(255,228,106);
     padding: 0.8em 2em 0.8em 2em;
@@ -160,7 +148,20 @@ height: 1em;
     display: flex;
     justify-content: center;
     margin: 0em 5em 0em 5em;
-    
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+.animal-crossing-NH a{
+    font-weight: 700;
+    background-color: rgb(196,22,27);
+    color: rgb(255,228,106);
+    padding: 0.8em 1em 0.8em 1em;
+    text-decoration: none;   
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: center;
+    margin: 0em 5em 0em 5em;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+    width: 15em;
 }
 
 button{
@@ -168,23 +169,21 @@ button{
     border: none;
     border-radius: 40%;
     padding: 1.2em;
-    margin: -0.8em -9em 2em 9.6em;
+    margin: 0em -9em 2em 9.6em;
 }
-
-.video{
-    width:18em;
-    height:12em;
-    margin: 4em 2.2em 0.5em 2em;
-}
-
 .arrow-button{
     width: 1em;
     height: 1em;
 }
 
-
+.video{
+    width:18em;
+    height:12em;
+    margin: 0em 2.2em 0.5em 2em;
+}
 
 .animal-crossing-NH{
+    height:38em ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,34 +201,755 @@ margin-bottom: -0.2em;
     width: 20em;
     text-align: center;
     }
+.animal-crossing-NH h2{
+    font-size: 1em;
+}
 
 .featured-ac-games{
-    height: 45em;
+    height: 22em;
+    display: flex;
+    overflow-x: auto;
 }
-.featured-ac-games h2{
+.featured-h2{
     color: rgb(130,75,21);
     text-shadow: none;
-    font-size: 1.8em;
-    padding-top: 3.8em;
+    font-size: 1.6em;
+    width: 10em;
+    margin: auto;
+    padding-bottom: 0.5em;
 }
-.featured-ac-games article{
+.featured-ac-games article:nth-of-type(1){
     background-color: white;
     color: rgb(130,75,21);
     border-radius:5%;
-    width: 20em;
-    height: 19em;
+    width: 19em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex:none;
+    margin-right: 0.5em;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+.featured-ac-games article:nth-of-type(2), .featured-ac-games article:nth-of-type(3){
+    background-color: white;
+    color: rgb(130,75,21);
+    border-radius:5%;
+    width: 19em;
+    height: 21em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex:none;
+    margin-right: 0.5em;
+    text-align: left;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+} 
+.featured-ac-games h4{
+    color:rgb(2,127,135);
+    font-size: 0.8em;
+    margin: 0em 0em -0.5em 1em;
+    align-items: flex-start;
+}
+.featured-ac-games h3{
+    font-size: 1em;
+    margin-left: 0.8em;
+}
+.featured-ac-games img{
+    border-radius: 0.5em;
+    max-width: 18em;
+    height: 10em;
+    margin:-1em 0.5em 1em 0.5em;
+}
+.featured-ac-games a{
+    background-color: rgb(196,22,27);
+    color: rgb(255,228,106);
+    padding: 0.8em 0em 0.8em 0em;
+    text-decoration: none;   
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: center;
+    width:18em;
+    margin-left: 0.5em;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+.more-games{
+    height: 12em;
+}
+.more-games h2, .more-games li, .more-games a{
+    color:rgb(2,127,135);
+    text-decoration: none;
+    text-shadow: none;
+    list-style: none;
+}
+
+.amiibo{
+    height: 62.9em;
+}
+.amiibo article{
+    width: 22.5em;
+    position: relative;
+    height: 36em;
+}
+.amiibo img{
+    width:10em;
+    background-color: rgba(81, 187, 75, 0.583);
+    border-radius: 100%;
+    
+}
+.amiibo h2{
+    color: white;
+    justify-content: center;
+}
+.amiibo p{
+    background-color: rgba(0, 0, 0, 0.375);
+    border-radius:0.5em;
+    width: 8em;
+}
+.amiibo li:nth-of-type(1){
+    list-style: none;
+    color: white;
+    width: 10em;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.amiibo li:nth-of-type(2){
+    list-style: none;
+    color: white;
+    width: 10em;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.amiibo li:nth-of-type(3){
+    list-style: none;
+    color: white;
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.amiibo li:nth-of-type(4){
+    list-style: none;
+    color: white;
+    width: auto;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.amiibo ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+.amiibo a{
+    background-color: rgb(253,209,5);
+    color: rgb(130,75,21);
+    padding: 0.8em 2em 0.8em 2em;
+    text-decoration: none;   
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: center;
+    margin: 0em 4em 0em 4em;
+}
+
+.play-nintendo{
+    color:rgb(53,29,35);
+    height: 52.3em;
+}
+.play-nintendo h2{
+    color: rgb(130,75,21);
+    font-size: 1.6em;
+}
+.play-nintendo a{
+    text-decoration: none;
+}
+.play-nintendo-1{
+    background-image: url(../images/play-nintendo-1.jpeg);
+    background-size: 100%;
+    text-align: end;
+    color: white;
+    height:10.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0.4em;
+}
+.play-nintendo-2{
+    background-image: url(../images/play-nintendo-2.jpeg);
+    background-size: 100%;
+    text-align: start;
+    color: rgb(72,72,72);
+    height:10.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0.4em;
+}.play-nintendo-3{
+    background-image: url(../images/play-nintendo-3.jpeg);
+    background-size: 100%;
+    text-align: start;
+    color: rgb(72,72,72);
+    height:10.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0.4em;
+}.play-nintendo-4{
+    background-image: url(../images/play-nintendo-4.jpeg);
+    background-size: 100%;
+    text-align: end;
+    color: rgb(72,72,72);
+    height:10.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0.4em;
+}
+.play-nintendo p{
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 0.5em;
+    margin: 1em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 200;
+}
+.play-nintendo span{
+    font-family: viga;
+    width: 8em;
+    margin-left:0.5em;
+    margin-right: 1em;
+}
+.play-nintendo h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 0.6em;
+    width:15em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.IsabelleOnTwitter{
+    position: relative;
+   
+}
+.IsabelleOnTwitter h2{
+    color:rgb(130,75,21);
+    width: 16em;
+    font-size: 1em;
+    padding: 3em;
+    background-image: url(../images/followOnTwitter.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.IsabelleOnTwitter a{
+    color: rgb(130,75,21);
+    margin-left: 0.4em;
+}
+.IsabelleOnTwitter img{
+width: 9em;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+footer{
+    margin-top: 10em;  
+}
+footer a:nth-of-type(1){
+    background-color: rgb(253,209,5);
+    color: rgb(130,75,21);
+    padding: 0.8em 2em 0.8em 2em;
+    text-decoration: none;   
+    border-radius: 0.8em;
+    display: flex;
+    justify-content: center;
+    margin: 0em 4em 0em 4em;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+footer h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+}
+footer img {
+    margin: 0.5em;
+    width: 3em;
+    border-radius: 0.4em;
+}
+footer img:nth-of-type(1){
+    width: 5.5em;
+}
+
+.secondPage{
+    background-image: url(../images/background-home2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header{
+    height: 26em;
+}
+.welcome{
+    height: 29em;
+}
+.welcome h2{
+    position: relative;
+    top: 1em;
+    font-size: 1.1em;
+}
+.welcome p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
+    width: 18em;
+    margin: auto;
+    position: relative;
+    top: 1em;
+}
+.welcome a{
+    text-decoration: none;
+    color: rgb(110,96,71);
+    position: relative;
+    top: 5.2em;
+    padding: 0.7em 3.5em 12em 3.5em;
+}
+.welcome h3{
+    font-size: 0.9em;
+    width: 15em;
+    margin: auto;
+    position: relative;
+    top: 22em;
+    color: rgb(110,96,71);
+}
+.dreamGetaway{
+    height: 48em;
+}
+.dreamGetaway article:nth-of-type(1){
+    height: 15em;
+    width: 18em;
+    background-color: rgb(248,248,240);
+    border: 0.8em solid;
+    border-color: rgb(234,224,133);
+    border-radius: 0.5em;
+    margin: auto;
+    margin-top: 6em;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+.dreamGetaway article:nth-of-type(2){
+    height: 24.5em;
+    width: 21.6em;
+    background-image: url(../images/hhpBackground.png);
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    margin-top: 1em;
+}
+#buyNow{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: rgb(248,248,240);
+    background-color: rgb(110,96,71);
+    margin: 2em;
+    position: relative;
+    top: -2em;
+    width: 10em;
+    padding: 0.8em 2em 0.8em 2em;
+    border-radius: 20%;  
+}
+.dreamGetaway a{
+    text-decoration: none;
+    color: rgb(110,96,71);
+    position: relative;
+    top: 3.8em;
+    padding: 1em 3em 1em 2em;
+}
+.dreamGetaway h4{
+    font-size: 1.2em;
+    width: 15em;
+    margin: auto;
+    position: relative;
+    top: 1em;
+}
+#nook{
+    width: 7em;
+    position: relative;
+    top: -3.5em;
+    left: 1em;
+    z-index: 9999;
+}
+#packshot{
+    width: 7em;
+    position: relative;
+    top: -3.5em;
+    right: 0.3em;
+}
+#lottie{
+    width: 8.1em;
+    position: relative;
+    top: 0.6em;
+    left: 2.6em;
+}
+#hhpLogo{
+    width: 11.3em;
+    position: relative;
+    right: 1.2em;
+    top: -0.7em;
+}
+
+.islandNews{
+    height: 83.5em;
+}
+.islandNews article{
+    height: 22em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    margin-bottom: 3.5em;
+    position: relative;
 }
-.featured-ac-games h4{
-    color:rgb(2,127,135);
-
+.islandNews h2{
+    font-size: 1em;
+    background-image: url(../images/bannerIslandNews.png);
+    background-size: cover;
+    padding: 1.5em 1.5em 2em 1.5em;
+    position: relative;
+    top: -4em;
 }
-.featured-ac-games img{
+.islandNews article h3{
+    color: rgb(110,96,71);
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    position: absolute;
+    top: 0.7em;
+    margin: 0;
+}
+.islandNews p{
+    color: rgb(0,128,119);
+    width: 18em;
+    font-size: 0.8em;
+    font-weight: 700;
+    position: absolute;
+    top: 3em;
+}
+.islandNews img{
+    width: 14.8em;
     border-radius: 0.5em;
-    width: 19em;
-    margin-top:1.5em ;
+    position: absolute;
+    top: 8.7em;
+}
+.islandNews a{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(110,96,71);
+    position: absolute;
+    top: 21em;
+}
+#allNews{
+    font-family: arvo, serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    color:rgb(248,248,240);
+    text-decoration: none;
+    background-color: rgb(0,128,119);
+    position: relative;
+    top: -1em;
+    padding: 1em 2em 1em 2em;
+    border-radius:20%;
+}
+
+.birthdayNewHorizon{
+    background-image: url(../images/birthdayBackground.png);
+    background-size: cover;
+    height:20em;
+    width: 20em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 6.5em;
+}
+.birthdayNewHorizon h2{
+    font-size: 0.9em;
+    font-weight: 700;
+    position: absolute;
+    top: 3.5em;
+}
+.birthdayNewHorizon h3{
+    color:rgb(234,224,133);
+    font-size: 0.9em;
+    font-weight: 700;
+    position: absolute;
+    top: 5em;
+}
+.birthdayNewHorizon img{
+    width: 15em;
+    position: absolute;
+    top: 7em;
+}
+
+.quote h2{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: arvo, serif;
+    height: 5em;
+    color: rgb(110,96,71);
+    width: 18em;
+    margin: auto;
+}
+.exploreYourIsland{
+    height:38em;
+    width:  23.4375em;
+    background-image: url(../images/exploreBackground.png);
+    background-size: cover;
+    margin-bottom:2.5em;
+    margin-left: -0.5em;
+}
+.exploreYourIsland article{
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 4em;
+}
+.exploreYourIsland img{
+    width: 3.5em;
+    position: absolute;
+    top: 0.5em;
+}
+.exploreYourIsland h3{
+    color:rgb(0,128,119);
+    position: absolute;
+    top: 2.5em;
+}
+.exploreYourIsland p{
+    color: rgb(110,96,71);
+    font-family:'Libre Franklin', sans-serif; 
+    font-size: 0.8em;
+    position: absolute;
+    top: 7.5em;
+}
+.exploreYourIsland a{
+    font-weight: 400;
+    font-size: 0.9em;
+    color:rgb(248,248,240);
+    text-decoration: none;
+    background-color: rgb(0,128,119);
+    position: absolute;
+    top: 12em;
+    padding: 1em 3em 1em 3em;
+    border-radius:20%;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+
+.createYourGetaway{
+    height: 38em;
+    background-image: url(../images/createYourGetawayBackground.png);
+    background-size: cover;
+    margin-bottom:2.5em;
+    margin-left: -0.5em;
+    width:  23.4375em;
+}
+.createYourGetaway article{
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 4em;
+}
+.createYourGetaway img{
+    width: 3.5em;
+    position: absolute;
+    top: 0.5em;
+}
+.createYourGetaway h3{
+    color:rgb(110,96,71);
+    position: absolute;
+    top: 2.5em;
+}
+.createYourGetaway p{
+    color: rgb(110,96,71);
+    font-family:'Libre Franklin', sans-serif; 
+    font-size: 0.8em;
+    position: absolute;
+    top: 7.5em;
+}
+.createYourGetaway a{
+    font-weight: 400;
+    font-size: 0.9em;
+    color:rgb(248,248,240);
+    text-decoration: none;
+    background-color: rgb(110,96,71);
+    position: absolute;
+    top: 12em;
+    padding: 1em 3em 1em 3em;
+    border-radius:20%;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+
+.shareYourParadise{
+    height: 38em;
+    background-image: url(../images/shareBackground.png);
+    background-size: cover;
+    margin-bottom:2.5em;
+    margin-left: -0.5em;
+    width:  23.4375em;
+}
+.shareYourParadise article{
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 4em;
+}
+.shareYourParadise img{
+    width: 3.5em;
+    position: absolute;
+    top: 0.5em;
+}
+.shareYourParadise h3{
+    color:rgb(45,104,149);
+    position: absolute;
+    top: 2.5em;
+}
+.shareYourParadise p{
+    color: rgb(110,96,71);
+    font-family:'Libre Franklin', sans-serif; 
+    font-size: 0.8em;
+    position: absolute;
+    top: 7.5em;
+}
+.shareYourParadise a{
+    font-weight: 400;
+    font-size: 0.9em;
+    color:rgb(248,248,240);
+    text-decoration: none;
+    background-color: rgb(45,104,149);
+    position: absolute;
+    top: 12em;
+    padding: 1em 3em 1em 3em;
+    border-radius:20%;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+
+.reviews{
+    height: 20em;
+}
+.reviews article{
+    display: flex;
+    flex-direction: row;
+    color:rgb(110,96,71);
+    width: 20em;
+    margin: auto;
+}
+.reviews p:nth-of-type(1){
+    font-family:'Libre Franklin', sans-serif ;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.reviews p:nth-of-type(2){
+    font-weight: 700;
+    font-size: 0.8em;
+}
+#Alfanso{
+    background-color: rgb(152,209,227);
+    border-radius: 100%;
+    border: 0.3em solid;
+    border-color: rgb(248,248,240);
+    width: 5em;
+    height: 5em;
+}
+#Rosie{
+    background-color: rgb(130,215,170);
+    border-radius: 100%;
+    border: 0.3em solid;
+    border-color: rgb(248,248,240);
+    width: 5em;
+    height: 5em;
+}
+#Gulliver{
+    background-color: rgb(243,158,100);
+    border-radius: 100%;
+    border: 0.3em solid;
+    border-color: rgb(248,248,240);
+    width: 5em;
+    height: 5em;
+}
+
+.transfer{
+    height: 40em;
+    background-image: url(../images/transferBackground.png);
+    background-size: cover;
+    margin-left: -0.5em;
+    width:  23.4375em;
+}
+.transfer article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 3.5em;
+}
+.transfer h2{
+    color:rgb(110,96,71);
+    font-size: 1.2em;
+    width: 17em;
+}
+.transfer p{
+    color: rgb(110,96,71);
+    font-family:'Libre Franklin', sans-serif;
+    font-size: 0.85em;
+    width: 22em;
+}
+.transfer img{
+    width: 18em;
+}
+.transfer a{
+    font-weight: 400;
+    font-size: 0.9em;
+    color:rgb(248,248,240);
+    text-decoration: none;
+    background-color: rgb(45,104,149);
+    padding: 1em 3em 1em 3em;
+    border-radius:20%;
+    position: relative;
+    top: 3em;
+    margin-bottom: 0.5em;
+    box-shadow: 0em 0.2em 0.5em #11111186;
 }
