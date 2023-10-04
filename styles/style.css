@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:wght@100;300;400&family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Franklin:wght@100;300;400&family=Viga&display=swap');
+
+@media (prefers-reduced-motion) {
+
+    * {
+
+        transition: none !important;
+
+        animation: none !important;
+
+    }
+
+}
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 
@@ -13,9 +27,9 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    /* startje */
+    --color-text: #111;
+    --color-background: #eee;
 }
 
 
@@ -24,85 +38,185 @@
 /****************/
 
 /* jouw code */
-body{
-    color:white;
+body {
+    color: white;
     background-image: url(../images/background-home1.jpeg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     font-family: arvo, serif;
     text-align: center;
 }
 
-div{
-    height: 30em;
-    opacity: 0.5;
+
+.reveal{
+    animation-name: scroll-animatiion;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    will-change: transform, opacity;
 }
-.red-nav-wrap{
-    background-color:rgb(230,0,19);
-    height:3.4em;
-    width: 24em;
+
+.header1 {
+    height: 5em;
+}
+
+.nav1 {
+    background-color: rgb(230, 0, 19);
+    height: 3.4em;
+    width: 24.45em;
     padding: 0%;
-    margin-left:-1em;
-    margin-top: -1em;
-    display:flex; 
-}
-
- .red-nav-wrap img{
-    width: auto;
-    height: 1.5em;
-    margin: 0.9em 0em 0em 2em;
-}
-
-.account-icon{
-width: auto;
-height: 1em;
-}
-
-.red-nav-wrap a{
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    display: flex;
-    align-items: center;
-    margin-left: 6em;
-}
-
-.reduce-motionbar{
-    background-color:rgb(255,228,106);
-    height: 2.3em;
-    width:29.8em;
     margin-left: -1em;
-    text-transform:uppercase;
-    font-size: 0.8em;
-    color: rgb(130,75,21);
-    text-align: center;
+    margin-top: -1em;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.nav1 article:nth-of-type(1){
+    position: relative;
+}
+.nav1 article:nth-of-type(2){
+    position: relative;
+}
+.nav1 img {
+    width: auto;
+    height: 1.5em;
+    position: absolute;
+    top: 0.8em;
+    left: 1em;
+}
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    
+}
+.nav1 a img{
+    position: relative;
+    right: 6em;
+    top: -0.2em;
 }
 
-.birthday{
+.account-icon {
+    width: auto;
+    height: 1em;
+    margin-right: 1.5em;
+    
+}
+.reduce-motionbar{
+    background-color: rgb(255,228,106);
+    border-radius: 0%;
+    height: 2.1em;
+    width: 23.4em;
+    position: relative;
+    top: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    margin: auto;
+}
+
+.reduce-motionbar button{
+    border: none;
+    background-color: rgb(255,228,106);
+    font-family: arvo, serif;
+    color: rgb(110, 96, 71);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.banner1{
+    background-image: url(../images/bannerPagina1achtergrond.png);
+    background-size: cover;
+    height: 36.5em;
+    width: 23.4em;
+    margin-left: -0.5em;    
+}
+.banner1 img:nth-of-type(1){
+    width: 10em;
+    position: absolute;
+    top: 7.5em;
+    left: 7em;  
+}
+.banner1 img:nth-of-type(2){
+    width: 13em;
+    position: absolute;
+    top: 13.6em;
+    left: 6em;   
+}
+.banner1 p{
+    background-image: url(../images/bordBannerPagina1.png);
+    background-size: cover;
+    width: 20em;
+    height: 12em;
+    text-shadow: 0em 0.1em 0.5em rgba(0, 0, 0, 0.473);
+    padding: 3em;
+    position: relative;
+    top: 22.5em;
+    margin: auto;   
+}
+.banner1 h2{
+    color: rgb(130, 75, 21);
+    font-size: 1.2em;
+    margin: 0%;
+    position: relative;
+    top: 1em;  
+}
+
+.arrow-button {
+    width: 1em;
+    height: 1em;
+}
+
+.pecan-birthday {
+    text-shadow: 0em 0.1em 0.5em rgba(0, 0, 0, 0.341);
+    height: 20em;
+}
+.boyd-birthday{
+    height: 20em;
+    position: absolute;
+    top: 41em;
+    left: 3.45em;
+}
+.pecan-birthday button, .boyd-birthday button {
+    background: rgb(196, 22, 27);
+    border: none;
+    border-radius: 40%;
+    padding: 1.2em;
+    margin: 0em -9em 2em 9.6em;
+    position: relative;
+    top: -12em;
+    left: -3.2em;
+}
+.character-pecan-birthday, .character-boyd-birthday {
+    width: 10em;
+    position: relative;
+    left: -2.5em;
+    top: 2.5em;
+}
+.pecan-birthday h2, .boyd-birthday h2{
+    text-align: center;
+    color: rgb(255, 228, 106);
+    font-size: 0.8em;
+}
+.pecan-birthday h3, .boyd-birthday h3{
     font-size: 1.2em;
     color: white;
-    margin-top: -0.6em;
-    text-shadow: 0em 0.1em 0.5em black;
-}
-
-.character-birthday{
-    width: 10em;
-}
-.birthday h2{
-    text-align: center;
-    color:rgb(255,228,106);
-    text-shadow: 0em 0.1em 0.5em black;
-    font-size: 1em;
+    position: relative;
+    top: -0.8em;
 }
 
 .animal-crossing-news-1 {
     font-family: arvo, serif;
-    color:rgb(130,75,21);
-    background-color:white;
+    color: rgb(130, 75, 21);
+    background-color: white;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -110,14 +224,13 @@ height: 1em;
     align-items: center;
     margin: 8em 0em 0em 0.5em;
     width: 21.5em;
-    height: 24em;   
+    height: 24em;
 }
-
-.animal-crossing-news-2{
+.animal-crossing-news-2 {
     font-family: arvo, serif;
     text-decoration: none;
-    color:rgb(130,75,21);
-    background-color:white;
+    color: rgb(130, 75, 21);
+    background-color: white;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -127,35 +240,50 @@ height: 1em;
     width: 21.5em;
     height: 22.7em;
 }
-
-.animal-crossing-news-1 a, .animal-crossing-news-2 a{
+.animal-crossing-news-1 a,
+.animal-crossing-news-2 a {
     text-decoration: none;
     font-weight: 700;
-    color: rgb(196,22,27);
+    color: rgb(196, 22, 27);
 }
-.animal-crossing-news-1 img, .animal-crossing-news-2 img{
-   border-radius: 0.8em;
-   width: 20em;
+.animal-crossing-news-1 img,
+.animal-crossing-news-2 img {
+    border-radius: 0.8em;
+    width: 20em;
+}
+.animal-crossing-news-1 h3,
+.animal-crossing-news-2 h3 {
+    color: rgb(2, 127, 135);
+    font-size: 0.8em;
+}
+.animal-crossing-news-1 p,
+.animal-crossing-news-2 p {
+    width: 16.5em;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 0%;
+    margin-bottom: 0.5em;
 }
 
-.button-home a{
+.SeeAllNews  {
     font-weight: 700;
-    background-color: rgb(196,22,27);
-    color: rgb(255,228,106);
+    background-color: rgb(196, 22, 27);
+    color: rgb(255, 228, 106);
     padding: 0.8em 2em 0.8em 2em;
-    text-decoration: none;   
+    text-decoration: none;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
     margin: 0em 5em 0em 5em;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
-.animal-crossing-NH a{
+
+.animal-crossing-NH a {
     font-weight: 700;
-    background-color: rgb(196,22,27);
-    color: rgb(255,228,106);
+    background-color: rgb(196, 22, 27);
+    color: rgb(255, 228, 106);
     padding: 0.8em 1em 0.8em 1em;
-    text-decoration: none;   
+    text-decoration: none;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
@@ -164,151 +292,189 @@ height: 1em;
     width: 15em;
 }
 
-button{
-    background: rgb(196,22,27);
-    border: none;
-    border-radius: 40%;
-    padding: 1.2em;
-    margin: 0em -9em 2em 9.6em;
-}
-.arrow-button{
-    width: 1em;
-    height: 1em;
-}
-
-.video{
-    width:18em;
-    height:12em;
+.video {
+    width: 18em;
+    height: 12em;
     margin: 0em 2.2em 0.5em 2em;
 }
 
-.animal-crossing-NH{
-    height:38em ;
+.animal-crossing-NH {
+    height: 36em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.animal-crossing-NH h2{
-color:rgb(130,75,21);
-text-shadow: none;
-font-weight: bold;
-margin-bottom: -0.2em;
+
+.animal-crossing-NH h2 {
+    color: rgb(130, 75, 21);
+    text-shadow: none;
+    font-weight: bold;
+    margin-bottom: -0.2em;
 }
-.animal-crossing-NH p{
-    color:rgb(130,75,21);
+
+.animal-crossing-NH p {
+    color: rgb(130, 75, 21);
     font-size: 1em;
     width: 20em;
     text-align: center;
-    }
-.animal-crossing-NH h2{
+}
+
+.animal-crossing-NH h2 {
     font-size: 1em;
 }
 
-.featured-ac-games{
-    height: 22em;
+.featured-ac-games {
+    height: 24em;
     display: flex;
     overflow-x: auto;
 }
-.featured-h2{
-    color: rgb(130,75,21);
+
+.featured-h2 {
+    color: rgb(130, 75, 21);
     text-shadow: none;
     font-size: 1.6em;
     width: 10em;
     margin: auto;
     padding-bottom: 0.5em;
+    position: relative;
+    top: 1.5em;
 }
-.featured-ac-games article:nth-of-type(1){
+
+.featured-ac-games article:nth-of-type(1) {
     background-color: white;
-    color: rgb(130,75,21);
-    border-radius:5%;
+    color: rgb(130, 75, 21);
+    border-radius: 5%;
     width: 19em;
     height: 20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex:none;
+    flex: none;
     margin-right: 0.5em;
     box-shadow: 0em 0.2em 0.5em #11111186;
+    position: relative;
+    top: 2.5em;
 }
-.featured-ac-games article:nth-of-type(2), .featured-ac-games article:nth-of-type(3){
+
+.featured-ac-games article:nth-of-type(2),
+.featured-ac-games article:nth-of-type(3) {
     background-color: white;
-    color: rgb(130,75,21);
-    border-radius:5%;
+    color: rgb(130, 75, 21);
+    border-radius: 5%;
     width: 19em;
     height: 21em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex:none;
+    flex: none;
     margin-right: 0.5em;
     text-align: left;
     box-shadow: 0em 0.2em 0.5em #11111186;
-} 
-.featured-ac-games h4{
-    color:rgb(2,127,135);
+    position: relative;
+    top: 2.5em;
+}
+
+.featured-ac-games h4 {
+    color: rgb(2, 127, 135);
     font-size: 0.8em;
     margin: 0em 0em -0.5em 1em;
     align-items: flex-start;
 }
-.featured-ac-games h3{
+
+.featured-ac-games h3 {
     font-size: 1em;
     margin-left: 0.8em;
 }
-.featured-ac-games img{
+
+.featured-ac-games img {
     border-radius: 0.5em;
     max-width: 18em;
     height: 10em;
-    margin:-1em 0.5em 1em 0.5em;
+    margin: -1em 0.5em 1em 0.5em;
 }
-.featured-ac-games a{
-    background-color: rgb(196,22,27);
-    color: rgb(255,228,106);
+
+.featured-ac-games a {
+    background-color: rgb(196, 22, 27);
+    color: rgb(255, 228, 106);
     padding: 0.8em 0em 0.8em 0em;
-    text-decoration: none;   
+    text-decoration: none;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
-    width:18em;
+    width: 18em;
     margin-left: 0.5em;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
-.more-games{
+
+.more-games {
     height: 12em;
 }
-.more-games h2, .more-games li, .more-games a{
-    color:rgb(2,127,135);
+
+.more-games li,
+.more-games a,
+.more-games ul {
+    color: rgb(2, 127, 135);
+    font-weight: 700;
     text-decoration: none;
     text-shadow: none;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 13em;
+    margin: auto;
+    padding: 0%;
+    line-height: 1.8em;
 }
-
-.amiibo{
+.more-games h2{
+    color: rgb(2, 127, 135);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.amiibo {
     height: 62.9em;
 }
-.amiibo article{
+
+.amiibo article {
     width: 22.5em;
     position: relative;
     height: 36em;
 }
-.amiibo img{
-    width:10em;
+
+.amiibo img {
+    width: 10em;
     background-color: rgba(81, 187, 75, 0.583);
     border-radius: 100%;
-    
+
 }
-.amiibo h2{
+
+.amiibo h2 {
     color: white;
+    font-size: 1.8em;
     justify-content: center;
+    text-shadow: 0em 0.1em 0.5em rgba(0, 0, 0, 0.473);
+}
+
+.amiibo button {
+    background-color: rgba(0, 0, 0, 0.375);
+    border-radius: 0.5em;
+    width: 9em;
+    height: 3em;
+    margin: auto;
+    border: none;
+    color: white;
+    font-family: arvo, serif;
 }
 .amiibo p{
-    background-color: rgba(0, 0, 0, 0.375);
-    border-radius:0.5em;
-    width: 8em;
+    font-size: 0.7em;
 }
-.amiibo li:nth-of-type(1){
+
+
+.amiibo li:nth-of-type(1) {
     list-style: none;
     color: white;
     width: 10em;
@@ -318,7 +484,8 @@ margin-bottom: -0.2em;
     left: 0;
     top: 0;
 }
-.amiibo li:nth-of-type(2){
+
+.amiibo li:nth-of-type(2) {
     list-style: none;
     color: white;
     width: 10em;
@@ -328,101 +495,112 @@ margin-bottom: -0.2em;
     right: 0;
     top: 0;
 }
-.amiibo li:nth-of-type(3){
+
+.amiibo li:nth-of-type(3) {
     list-style: none;
     color: white;
-    width: auto;
+    width: 10em;
     margin: 0%;
     padding: 0%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 19em;
 }
-.amiibo li:nth-of-type(4){
+
+.amiibo li:nth-of-type(4) {
     list-style: none;
     color: white;
-    width: auto;
+    width: 10em;
     margin: 0%;
     padding: 0%;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right:0em;
+    top: 19em;
 }
 
-.amiibo ul{
+.amiibo ul {
     margin: 0%;
     padding: 0%;
 }
 
-.amiibo a{
-    background-color: rgb(253,209,5);
-    color: rgb(130,75,21);
+.amiibo a {
+    background-color: rgb(253, 209, 5);
+    color: rgb(130, 75, 21);
     padding: 0.8em 2em 0.8em 2em;
-    text-decoration: none;   
+    text-decoration: none;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
     margin: 0em 4em 0em 4em;
 }
 
-.play-nintendo{
-    color:rgb(53,29,35);
+.play-nintendo {
+    color: rgb(53, 29, 35);
     height: 52.3em;
 }
-.play-nintendo h2{
-    color: rgb(130,75,21);
+
+.play-nintendo h2 {
+    color: rgb(130, 75, 21);
     font-size: 1.6em;
 }
-.play-nintendo a{
+
+.play-nintendo a {
     text-decoration: none;
 }
-.play-nintendo-1{
+
+.play-nintendo-1 {
     background-image: url(../images/play-nintendo-1.jpeg);
     background-size: 100%;
     text-align: end;
     color: white;
-    height:10.5em;
+    height: 10.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     margin: 0.4em;
 }
-.play-nintendo-2{
+
+.play-nintendo-2 {
     background-image: url(../images/play-nintendo-2.jpeg);
     background-size: 100%;
     text-align: start;
-    color: rgb(72,72,72);
-    height:10.5em;
+    color: rgb(72, 72, 72);
+    height: 10.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin: 0.4em;
-}.play-nintendo-3{
+}
+
+.play-nintendo-3 {
     background-image: url(../images/play-nintendo-3.jpeg);
     background-size: 100%;
     text-align: start;
-    color: rgb(72,72,72);
-    height:10.5em;
+    color: rgb(72, 72, 72);
+    height: 10.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin: 0.4em;
-}.play-nintendo-4{
+}
+
+.play-nintendo-4 {
     background-image: url(../images/play-nintendo-4.jpeg);
     background-size: 100%;
     text-align: end;
-    color: rgb(72,72,72);
-    height:10.5em;
+    color: rgb(72, 72, 72);
+    height: 10.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     margin: 0.4em;
 }
-.play-nintendo p{
+
+.play-nintendo p {
     background-color: rgba(255, 255, 255, 0.473);
     padding: 0.5em;
     margin: 1em;
@@ -431,93 +609,355 @@ margin-bottom: -0.2em;
     font-size: 0.7em;
     font-weight: 200;
 }
-.play-nintendo span{
+
+.play-nintendo span {
     font-family: viga;
     width: 8em;
-    margin-left:0.5em;
+    margin-left: 0.5em;
     margin-right: 1em;
 }
-.play-nintendo h3{
+
+.play-nintendo h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 0.6em;
-    width:15em;
+    width: 15em;
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.IsabelleOnTwitter{
+.IsabelleOnTwitter {
     position: relative;
-   
 }
-.IsabelleOnTwitter h2{
-    color:rgb(130,75,21);
+
+.IsabelleOnTwitter h2 {
+    color: rgb(130, 75, 21);
     width: 16em;
     font-size: 1em;
     padding: 3em;
     background-image: url(../images/followOnTwitter.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    position: absolute;
+    top: -1.1em;
 
 }
-.IsabelleOnTwitter a{
-    color: rgb(130,75,21);
+
+.IsabelleOnTwitter a {
+    color: rgb(130, 75, 21);
     margin-left: 0.4em;
 }
-.IsabelleOnTwitter img{
-width: 9em;
-position: absolute;
-right: 0;
-top: 0;
+
+.IsabelleOnTwitter img {
+    width: 9em;
+    position: absolute;
+    right: 0;
+    top:-0.3em ;
 }
 
-footer{
-    margin-top: 10em;  
+.footer1 {
+    margin-top: 10em;
+    height:40em;
+    position: relative;
 }
-footer a:nth-of-type(1){
-    background-color: rgb(253,209,5);
-    color: rgb(130,75,21);
+
+.footer1 a:nth-of-type(1) {
+    background-color: rgb(253, 209, 5);
+    color: rgb(130, 75, 21);
     padding: 0.8em 2em 0.8em 2em;
-    text-decoration: none;   
+    text-decoration: none;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
     margin: 0em 4em 0em 4em;
     box-shadow: 0em 0.2em 0.5em #11111186;
+    position: absolute;
+    top: 8em;
+    left: 0.5em;
 }
-footer h2{
+
+.footer1 h2 {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: 200;
+    position: relative;
+    top: 14em;
 }
-footer img {
+
+.footer1 img {
     margin: 0.5em;
     width: 3em;
     border-radius: 0.4em;
-}
-footer img:nth-of-type(1){
-    width: 5.5em;
+    position: relative;
+    top: 14em;
 }
 
-.secondPage{
+.footer1 img:nth-of-type(1) {
+    width: 5.5em;
+    position: relative;
+    top: 13em;
+}
+
+.footer1 a:nth-of-type(2) {
+    padding: 0.8em 2em 0.8em 2em;
+    text-decoration: none;
+    position: absolute;
+    top:16em;
+    right: 10em;
+}
+.footer1 a:nth-of-type(3) {
+    padding: 0.8em 2em 0.8em 2em;
+    text-decoration: none;
+    position: absolute;
+    top:16em;
+    right: 1em;
+}
+
+/* code voor de tweede pagina*/
+.secondPage {
     background-image: url(../images/background-home2.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    height: 490em;
 }
 
-header{
-    height: 26em;
+header {
+    height: 6em;
+    width: 23.4375em;
+    margin-left: -0.5em;
 }
-.welcome{
+header img{
+    position: absolute;
+    width: 5.1em;
+    top: 2.9em;
+    right: 0;
+    z-index: 100;
+
+}
+.navTweedePagina a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    margin-left: 6em;
+}
+
+.navTweedePagina {
+    background-color: rgb(230, 0, 19);
+    height: 3.4em;
+    width: 24em;
+    padding: 0%;
+    margin-left: -1em;
+    margin-top: -1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+}
+
+.navTweedePagina img {
+    width: auto;
+    height: 1.5em;
+    margin: 0.9em 0em 0em 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navTweedePagina a img{
+    position: relative;
+    right: 5em;
+    top: -0.5em;
+}
+.navTweedePagina a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    position: absolute;
+    display: flex;
+    top: 1em;
+    right:2em;
+}
+
+.reduce-motionbar2 {
+    font-family: 'Libre Franklin', sans-serif;
+    height: 3.2em;
+    width: 22em;
+    margin-left: 0em;
+    font-size: 0.8em;
+    color: white;
+    position: relative;
+    top: 0em;
+    left: 0.8em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reduce-motionbar2 span{
+    background-color: rgb(15,128,96);
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.reduce-motionbar2 button{
+    border: none;
+    background-color:  rgb(15,128,96);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+.menu{
+    position: relative;
+    height: 3em;
+}
+.menu button{
+    background-color: rgb(240,225,111);
+    font-family: arvo, serif;
+    color: rgb(110, 96, 71);
+    border-radius: 0%;
+    border: none;
+    height: 3em;
+    width: 28em;
+    position: relative;
+    top: 0em;
+    left: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    margin-bottom: 0%;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+
+}
+.menu img{
+    width: 2em;
+    position: absolute;
+    top: 0.6em;
+    left: 10em;
+}
+nav{
+    background-image: url(../images/menuAchtergrond.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 333;
+    height: 41.7em;
+    width:24em;
+    margin-left:-0.5em;
+}
+.closedMenu{
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top:-0.1em;
+    right: -0.01em;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#menuKruisje{
+    width: 3.9em;
+    position: absolute;
+    top: 0.1em;
+    right: 0.01em;
+    animation: none;
+}
+
+@keyframes logo-animatie{
+    0%{
+        scale: 1.1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+
+nav img{
+    width: 9em;
+    position: relative;
+    top: 2.7em;
+    animation-name: logo-animatie;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+nav li, nav ul, nav a{
+    list-style:none;
+    padding: 0%;
+    text-decoration: none;
+    color:rgb(110, 96, 71);
+    position: relative;
+    top: 1.3em;
+    height: 3.8em;
+    font-weight: 700;
+}
+@keyframes balloon-animation{
+    0%{
+        translate:0em;
+    }
+    100%{
+        translate: 24em;
+    }
+}
+nav img:nth-of-type(2){
+    width: 4.5em;
+    animation-name: balloon-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 33.5em;
+    left: 0;
+}
+.hidden{
+    display: none;
+}
+
+.banner{
+    position: relative;
+    top: 2.5em;
+    width: 23.5em;
+    height: 21em;
+    margin-left: -0.5em;
+    background-image: url(../images/banner2ePagina.png);
+    background-size: cover;
+    z-index: -10;
+}
+.banner img {
+    width: 10em;
+    position: relative;
+    top: 2em;
+}
+.banner a{
+    background-image: url(../images/buyNowLink.png);
+    background-size: cover;
+    padding: 2em 1em 1.5em 3em ;
+    text-decoration: none;
+    color: rgb(110, 96, 71);
+    position: absolute;
+    right: 0;
+    top: 8em;
+}
+.welcome {
     height: 29em;
+    position: relative;
+    top: 2.2em;
 }
-.welcome h2{
+
+.welcome h2 {
     position: relative;
     top: 1em;
     font-size: 1.1em;
 }
-.welcome p{
+
+.welcome p {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 100;
     font-size: 0.9em;
@@ -526,36 +966,41 @@ header{
     position: relative;
     top: 1em;
 }
-.welcome a{
+
+.welcome a {
     text-decoration: none;
-    color: rgb(110,96,71);
+    color: rgb(110, 96, 71);
     position: relative;
     top: 5.2em;
     padding: 0.7em 3.5em 12em 3.5em;
 }
-.welcome h3{
+
+.welcome h3 {
     font-size: 0.9em;
     width: 15em;
     margin: auto;
     position: relative;
     top: 22em;
-    color: rgb(110,96,71);
+    color: rgb(110, 96, 71);
 }
-.dreamGetaway{
+
+.dreamGetaway {
     height: 48em;
 }
-.dreamGetaway article:nth-of-type(1){
+
+.dreamGetaway article:nth-of-type(1) {
     height: 15em;
     width: 18em;
-    background-color: rgb(248,248,240);
+    background-color: rgb(248, 248, 240);
     border: 0.8em solid;
-    border-color: rgb(234,224,133);
+    border-color: rgb(234, 224, 133);
     border-radius: 0.5em;
     margin: auto;
     margin-top: 6em;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
-.dreamGetaway article:nth-of-type(2){
+
+.dreamGetaway article:nth-of-type(2) {
     height: 24.5em;
     width: 21.6em;
     background-image: url(../images/hhpBackground.png);
@@ -564,62 +1009,72 @@ header{
     margin: auto;
     margin-top: 1em;
 }
-#buyNow{
+
+#buyNow {
     font-size: 0.9em;
     text-decoration: none;
-    color: rgb(248,248,240);
-    background-color: rgb(110,96,71);
+    color: rgb(248, 248, 240);
+    background-color: rgb(110, 96, 71);
     margin: 2em;
     position: relative;
     top: -2em;
     width: 10em;
     padding: 0.8em 2em 0.8em 2em;
-    border-radius: 20%;  
+    border-radius: 20%;
 }
-.dreamGetaway a{
+
+.dreamGetaway a {
     text-decoration: none;
-    color: rgb(110,96,71);
+    color: rgb(110, 96, 71);
     position: relative;
     top: 3.8em;
     padding: 1em 3em 1em 2em;
 }
-.dreamGetaway h4{
+
+.dreamGetaway h4 {
     font-size: 1.2em;
     width: 15em;
     margin: auto;
     position: relative;
     top: 1em;
 }
-#nook{
+
+#nook {
     width: 7em;
     position: relative;
     top: -3.5em;
     left: 1em;
     z-index: 9999;
 }
-#packshot{
+
+#packshot {
     width: 7em;
     position: relative;
     top: -3.5em;
     right: 0.3em;
 }
-#lottie{
+
+#lottie {
     width: 8.1em;
     position: relative;
     top: 0.6em;
     left: 2.6em;
 }
-#hhpLogo{
+
+#hhpLogo {
     width: 11.3em;
     position: relative;
     right: 1.2em;
     top: -0.7em;
 }
 
-.islandNews{
+.islandNews {
     height: 83.5em;
+    position: relative;
+    top: 2em;
 }
-.islandNews article{
+
+.islandNews article {
     height: 22em;
     display: flex;
     flex-direction: column;
@@ -628,7 +1083,8 @@ header{
     margin-bottom: 3.5em;
     position: relative;
 }
-.islandNews h2{
+
+.islandNews h2 {
     font-size: 1em;
     background-image: url(../images/bannerIslandNews.png);
     background-size: cover;
@@ -636,8 +1092,9 @@ header{
     position: relative;
     top: -4em;
 }
-.islandNews article h3{
-    color: rgb(110,96,71);
+
+.islandNews article h3 {
+    color: rgb(110, 96, 71);
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
     font-size: 0.9em;
@@ -645,46 +1102,50 @@ header{
     top: 0.7em;
     margin: 0;
 }
-.islandNews p{
-    color: rgb(0,128,119);
+
+.islandNews p {
+    color: rgb(0, 128, 119);
     width: 18em;
     font-size: 0.8em;
     font-weight: 700;
     position: absolute;
     top: 3em;
 }
-.islandNews img{
+
+.islandNews img {
     width: 14.8em;
     border-radius: 0.5em;
     position: absolute;
     top: 8.7em;
 }
-.islandNews a{
+
+.islandNews a {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 0.9em;
     font-weight: 700;
     text-decoration: none;
-    color: rgb(110,96,71);
+    color: rgb(110, 96, 71);
     position: absolute;
     top: 21em;
 }
-#allNews{
+
+#allNews {
     font-family: arvo, serif;
     font-weight: 400;
     font-size: 0.9em;
-    color:rgb(248,248,240);
+    color: rgb(248, 248, 240);
     text-decoration: none;
-    background-color: rgb(0,128,119);
+    background-color: rgb(0, 128, 119);
     position: relative;
     top: -1em;
     padding: 1em 2em 1em 2em;
-    border-radius:20%;
+    border-radius: 20%;
 }
 
-.birthdayNewHorizon{
+.birthdayNewHorizon {
     background-image: url(../images/birthdayBackground.png);
     background-size: cover;
-    height:20em;
+    height: 20em;
     width: 20em;
     margin: auto;
     display: flex;
@@ -692,45 +1153,55 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 6.5em;
+    margin-bottom: 8em;
+    position: relative;
+    top: 4em;
 }
-.birthdayNewHorizon h2{
+
+.birthdayNewHorizon h2 {
     font-size: 0.9em;
     font-weight: 700;
     position: absolute;
-    top: 3.5em;
+    top: 3em;
 }
-.birthdayNewHorizon h3{
-    color:rgb(234,224,133);
+
+.birthdayNewHorizon h3 {
+    color: rgb(234, 224, 133);
     font-size: 0.9em;
     font-weight: 700;
     position: absolute;
-    top: 5em;
+    top: 4.5em;
 }
-.birthdayNewHorizon img{
+
+.birthdayNewHorizon img {
     width: 15em;
     position: absolute;
     top: 7em;
+    animation-name: logo-animatie;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-.quote h2{
+.quote h2 {
     font-size: 1.2em;
     font-weight: 700;
     font-family: arvo, serif;
     height: 5em;
-    color: rgb(110,96,71);
+    color: rgb(110, 96, 71);
     width: 18em;
     margin: auto;
 }
-.exploreYourIsland{
-    height:38em;
-    width:  23.4375em;
+
+.exploreYourIsland {
+    height: 38em;
+    width: 23.4375em;
     background-image: url(../images/exploreBackground.png);
     background-size: cover;
-    margin-bottom:2.5em;
+    margin-bottom: 2.5em;
     margin-left: -0.5em;
 }
-.exploreYourIsland article{
+
+.exploreYourIsland article {
     width: 15em;
     display: flex;
     flex-direction: column;
@@ -740,45 +1211,50 @@ header{
     position: relative;
     top: 4em;
 }
-.exploreYourIsland img{
+
+.exploreYourIsland img {
     width: 3.5em;
     position: absolute;
     top: 0.5em;
 }
-.exploreYourIsland h3{
-    color:rgb(0,128,119);
+
+.exploreYourIsland h3 {
+    color: rgb(0, 128, 119);
     position: absolute;
     top: 2.5em;
 }
-.exploreYourIsland p{
-    color: rgb(110,96,71);
-    font-family:'Libre Franklin', sans-serif; 
+
+.exploreYourIsland p {
+    color: rgb(110, 96, 71);
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 0.8em;
     position: absolute;
     top: 7.5em;
 }
-.exploreYourIsland a{
+
+.exploreYourIsland a {
     font-weight: 400;
     font-size: 0.9em;
-    color:rgb(248,248,240);
+    color: rgb(248, 248, 240);
     text-decoration: none;
-    background-color: rgb(0,128,119);
+    background-color: rgb(0, 128, 119);
     position: absolute;
     top: 12em;
     padding: 1em 3em 1em 3em;
-    border-radius:20%;
+    border-radius: 20%;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
 
-.createYourGetaway{
+.createYourGetaway {
     height: 38em;
     background-image: url(../images/createYourGetawayBackground.png);
     background-size: cover;
-    margin-bottom:2.5em;
+    margin-bottom: 2.5em;
     margin-left: -0.5em;
-    width:  23.4375em;
+    width: 23.4375em;
 }
-.createYourGetaway article{
+
+.createYourGetaway article {
     width: 15em;
     display: flex;
     flex-direction: column;
@@ -788,45 +1264,50 @@ header{
     position: relative;
     top: 4em;
 }
-.createYourGetaway img{
+
+.createYourGetaway img {
     width: 3.5em;
     position: absolute;
     top: 0.5em;
 }
-.createYourGetaway h3{
-    color:rgb(110,96,71);
+
+.createYourGetaway h3 {
+    color: rgb(110, 96, 71);
     position: absolute;
     top: 2.5em;
 }
-.createYourGetaway p{
-    color: rgb(110,96,71);
-    font-family:'Libre Franklin', sans-serif; 
+
+.createYourGetaway p {
+    color: rgb(110, 96, 71);
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 0.8em;
     position: absolute;
     top: 7.5em;
 }
-.createYourGetaway a{
+
+.createYourGetaway a {
     font-weight: 400;
     font-size: 0.9em;
-    color:rgb(248,248,240);
+    color: rgb(248, 248, 240);
     text-decoration: none;
-    background-color: rgb(110,96,71);
+    background-color: rgb(110, 96, 71);
     position: absolute;
     top: 12em;
     padding: 1em 3em 1em 3em;
-    border-radius:20%;
+    border-radius: 20%;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
 
-.shareYourParadise{
+.shareYourParadise {
     height: 38em;
     background-image: url(../images/shareBackground.png);
     background-size: cover;
-    margin-bottom:2.5em;
+    margin-bottom: 2.5em;
     margin-left: -0.5em;
-    width:  23.4375em;
+    width: 23.4375em;
 }
-.shareYourParadise article{
+
+.shareYourParadise article {
     width: 15em;
     display: flex;
     flex-direction: column;
@@ -836,88 +1317,103 @@ header{
     position: relative;
     top: 4em;
 }
-.shareYourParadise img{
+
+.shareYourParadise img {
     width: 3.5em;
     position: absolute;
     top: 0.5em;
 }
-.shareYourParadise h3{
-    color:rgb(45,104,149);
+
+.shareYourParadise h3 {
+    color: rgb(45, 104, 149);
     position: absolute;
     top: 2.5em;
 }
-.shareYourParadise p{
-    color: rgb(110,96,71);
-    font-family:'Libre Franklin', sans-serif; 
+
+.shareYourParadise p {
+    color: rgb(110, 96, 71);
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 0.8em;
     position: absolute;
     top: 7.5em;
 }
-.shareYourParadise a{
+
+.shareYourParadise a {
     font-weight: 400;
     font-size: 0.9em;
-    color:rgb(248,248,240);
+    color: rgb(248, 248, 240);
     text-decoration: none;
-    background-color: rgb(45,104,149);
+    background-color: rgb(45, 104, 149);
     position: absolute;
     top: 12em;
     padding: 1em 3em 1em 3em;
-    border-radius:20%;
+    border-radius: 20%;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
 
-.reviews{
+.reviews {
     height: 20em;
 }
-.reviews article{
+
+.reviews article {
     display: flex;
     flex-direction: row;
-    color:rgb(110,96,71);
+    color: rgb(110, 96, 71);
     width: 20em;
     margin: auto;
+    text-align: left;
 }
-.reviews p:nth-of-type(1){
-    font-family:'Libre Franklin', sans-serif ;
+
+.reviews p:nth-of-type(1) {
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     font-size: 0.8em;
+    margin-left: 1.5em;  
 }
-.reviews p:nth-of-type(2){
+
+.reviews p:nth-of-type(2) {
     font-weight: 700;
     font-size: 0.8em;
+    margin-left: 1.5em;
 }
-#Alfanso{
-    background-color: rgb(152,209,227);
+
+#Alfanso {
+    background-color: rgb(152, 209, 227);
     border-radius: 100%;
     border: 0.3em solid;
-    border-color: rgb(248,248,240);
-    width: 5em;
-    height: 5em;
-}
-#Rosie{
-    background-color: rgb(130,215,170);
-    border-radius: 100%;
-    border: 0.3em solid;
-    border-color: rgb(248,248,240);
-    width: 5em;
-    height: 5em;
-}
-#Gulliver{
-    background-color: rgb(243,158,100);
-    border-radius: 100%;
-    border: 0.3em solid;
-    border-color: rgb(248,248,240);
+    border-color: rgb(248, 248, 240);
     width: 5em;
     height: 5em;
 }
 
-.transfer{
+#Rosie {
+    background-color: rgb(130, 215, 170);
+    border-radius: 100%;
+    border: 0.3em solid;
+    border-color: rgb(248, 248, 240);
+    width: 5em;
+    height: 5em;
+}
+
+#Gulliver {
+    background-color: rgb(243, 158, 100);
+    border-radius: 100%;
+    border: 0.3em solid;
+    border-color: rgb(248, 248, 240);
+    width: 5em;
+    height: 5em; 
+}
+
+.transfer {
     height: 40em;
     background-image: url(../images/transferBackground.png);
     background-size: cover;
     margin-left: -0.5em;
-    width:  23.4375em;
+    margin-bottom: 4em;
+    width: 23.4375em;
 }
-.transfer article{
+
+.transfer article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -926,30 +1422,288 @@ header{
     position: relative;
     top: 3.5em;
 }
-.transfer h2{
-    color:rgb(110,96,71);
+
+.transfer h2 {
+    color: rgb(110, 96, 71);
     font-size: 1.2em;
     width: 17em;
 }
-.transfer p{
-    color: rgb(110,96,71);
-    font-family:'Libre Franklin', sans-serif;
+
+.transfer p {
+    color: rgb(110, 96, 71);
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 0.85em;
     width: 22em;
 }
-.transfer img{
+
+.transfer img {
     width: 18em;
 }
-.transfer a{
+
+.transfer a {
     font-weight: 400;
     font-size: 0.9em;
-    color:rgb(248,248,240);
+    color: rgb(248, 248, 240);
     text-decoration: none;
-    background-color: rgb(45,104,149);
+    background-color: rgb(45, 104, 149);
     padding: 1em 3em 1em 3em;
-    border-radius:20%;
+    border-radius: 20%;
     position: relative;
     top: 3em;
     margin-bottom: 0.5em;
     box-shadow: 0em 0.2em 0.5em #11111186;
 }
+
+.reserveYourNook {
+    height: 40em;
+    background-image: url(../images/reserveYourNook.png);
+    background-size: cover;
+    margin-left: -0.5em;
+    margin-bottom: 2.5em;
+    width: 23.4375em;
+}
+
+.reserveYourNook article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.reserveYourNook h2 {
+    color: rgb(110, 96, 71);
+    font-size: 1.2em;
+    width: 15em;
+    position: absolute;
+    top: 12em;
+}
+
+.reserveYourNook p {
+    color: rgb(110, 96, 71);
+    font-family: 'Libre Franklin', sans-serif;
+    position: absolute;
+    top: 20em;
+}
+
+.reserveYourNook a {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: rgb(248, 248, 240);
+    text-decoration: none;
+    background-color: rgb(110, 96, 71);
+    padding: 1em 3em 1em 3em;
+    border-radius: 20%;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+    position: absolute;
+    top: 26em;
+}
+
+.reserveYourNook p:nth-of-type(2) {
+    font-family: arvo, serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: rgb(248, 248, 240);
+    width: 20em;
+    position: absolute;
+    top: 36em;
+}
+
+.reserveYourNook img:nth-of-type(1) {
+    width: 9.5em;
+    position: absolute;
+    top: -1.5em;
+    left: 7.7em;
+    z-index: 1;
+}
+
+.reserveYourNook img:nth-of-type(2) {
+    width: 8em;
+    position: absolute;
+    top: 6.4em;
+    left: 1.73em;
+    z-index: 2;
+}
+
+.reserveYourNook img:nth-of-type(3) {
+    width: 5.5em;
+    position: absolute;
+    top: 6.2em;
+    right: 2.65em;
+    z-index: 3;
+}
+
+.reserveYourNook img:nth-of-type(4) {
+    width: 14em;
+    position: absolute;
+    top: 34.25em;
+    left: 1.2em;
+}
+
+.reserveYourNook img:nth-of-type(5) {
+    width: 7em;
+    position: absolute;
+    top: 35em;
+    right: 2.2em;
+}
+
+.free-in-game-bonuses {
+    height: 44em;
+    background-image: url(../images/free-in-game-bonusesBackground.png);
+    background-size: cover;
+    margin-left: -0.5em;
+    width: 23.4375em;
+}
+
+.free-in-game-bonuses article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 3em;
+}
+
+.free-in-game-bonuses h2 {
+    color: rgb(0, 77, 15);
+    font-size: 1.2em;
+    width: 18em;
+}
+
+.free-in-game-bonuses p {
+    color: rgb(71, 71, 70);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.8em;
+    width: 24em;
+    line-height: 1.5em;
+}
+
+.free-in-game-bonuses h4 {
+    color: rgb(71, 71, 70);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.7em;
+    width: 26em;
+    line-height: 1.5em;
+}
+
+.free-in-game-bonuses a {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: rgb(248, 248, 240);
+    text-decoration: none;
+    background-color: rgb(0, 77, 15);
+    padding: 1em 3em 1em 3em;
+    border-radius: 20%;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+}
+
+.free-in-game-bonuses img {
+    width: 16em;
+    position: absolute;
+    top: 17.8em;
+    z-index: 1;
+}
+
+.free-in-game-bonuses img:nth-of-type(2) {
+    width: 19em;
+    position: absolute;
+    top: 28em;
+    z-index: 0;
+}
+
+.footer2 {
+    background-image: url(../images/footer2Background.png);
+    background-size: cover;
+    height: 76em;
+    margin-left: -0.5em;
+    width: 23.4375em;
+    color: rgb(110, 96, 71);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.footer2 article {
+    position: relative;
+    top: 6em;
+}
+
+#customerSupport {
+    background-color: white;
+    text-decoration: none;
+    color: rgb(110, 96, 71);
+    font-weight: 400;
+    font-size: 0.8em;
+    position: absolute;
+    top: 0.6em;
+    padding: 0.5em 5em 0.5em 5em;
+    left: 5em;
+}
+
+.footer2 p {
+    font-weight: 300;
+    font-size: 0.65em;
+    width: 29em;
+    position: relative;
+    top: 5em;
+    margin: auto;
+    margin-bottom: 0.8em;
+}
+
+.footer2 p:nth-of-type(5) {
+    font-weight: 300;
+    font-size: 0.65em;
+    width: 29em;
+    position: relative;
+    top: 14em;
+    margin: auto;
+    margin-bottom: 0.8em;
+}
+
+
+.footer2 h2{
+    position: relative;
+    top: 3.5em;
+    font-size: 1em;
+}
+
+.footer2 img:nth-of-type(1) {
+    width: 8em;
+    border-radius: 0%;
+    position: relative;
+    top: 3.2em;
+}
+
+.footer2 img:nth-of-type(2) {
+    width: 5.2em;
+    position: relative;
+    top: 3.4em;
+}
+
+.footer2 img {
+    margin: 0.5em;
+    width: 3em;
+    border-radius: 0.4em;
+    position: relative;
+    top: 3em;
+}
+
+.footer2 a{
+    background-color: rgb(248,237,187);
+    text-decoration: none;
+    color:rgb(110, 96, 71) ;
+    font-size: 0.8em;
+    position: relative;
+    top: 8em;
+    margin-bottom: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.verstoppen{
+    display: none;
+}
+
+  
