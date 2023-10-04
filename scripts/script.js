@@ -41,7 +41,7 @@ var buttonLiedje = document.querySelector('.amiibo button');
 
 function liedjeAmiibo(){
     console.log('Button clicked');
-    var audio = new Audio('/sounds/kk-slider-bubblegum.mp3');
+    var audio = new Audio('./sounds/kk-slider-bubblegum.mp3');
     audio.play();
 }
 
