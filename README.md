@@ -251,6 +251,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. https://codepen.io/tobi-wan-kenobi/pen/YzdrKvg
   3. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
   4. https://chat.openai.com/c/f75f254d-d85c-4914-a90d-a030763245eb
+  5. https://codepen.io/tobi-wan-kenobi/pen/OJdWqxM
 
 
 </details>

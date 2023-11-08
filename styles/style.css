@@ -5,13 +5,9 @@
 @media (prefers-reduced-motion) {
 
     * {
-
         transition: none !important;
-
         animation: none !important;
-
     }
-
 }
 /**************/
 /* CSS REMEDY */
@@ -45,6 +41,7 @@ body {
     background-size: cover;
     font-family: arvo, serif;
     text-align: center;
+    position: relative;
 }
 
 
@@ -58,6 +55,9 @@ body {
 
 .header1 {
     height: 5em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav1 {
@@ -107,9 +107,9 @@ body {
     width: auto;
     height: 1em;
     margin-right: 1.5em;
-    
 }
-.reduce-motionbar{
+
+.reduce-motion{
     background-color: rgb(255,228,106);
     border-radius: 0%;
     height: 2.1em;
@@ -121,15 +121,30 @@ body {
     align-items: center;
     margin-bottom: 0%;
     margin: auto;
+    box-shadow: 0em 0.2em 0.5em #11111186;
+    padding: 0.5em;
 }
 
-.reduce-motionbar button{
+.reduce-motion label{
     border: none;
     background-color: rgb(255,228,106);
     font-family: arvo, serif;
     color: rgb(110, 96, 71);
     text-transform: uppercase;
     font-size: 0.8em;
+}
+
+.reduced-motion-active * {
+    transition: none !important;
+    animation: none !important;
+}
+ 
+.reduce-motion :first-child {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-right: 0.5em;
+    background-color: transparent;
+    border: none;
 }
 
 .banner1{
@@ -142,16 +157,28 @@ body {
 .banner1 img:nth-of-type(1){
     width: 10em;
     position: absolute;
-    top: 7.5em;
+    top: 8em;
     left: 7em;  
 }
-.banner1 img:nth-of-type(2){
+.bannerChristmas img:nth-of-type(1){
+    width: 10em;
+    position: absolute;
+    top: 3em;
+    left: 7em;  
+}
+.banner1 img:nth-of-type(2) {
     width: 13em;
     position: absolute;
-    top: 13.6em;
+    top: 14em;
     left: 6em;   
 }
-.banner1 p{
+.bannerChristmas img:nth-of-type(2){
+    width: 13em;
+    position: absolute;
+    top: 10em;
+    left: 7em;   
+}
+.banner1 p, .bannerChristmas p{
     background-image: url(../images/bordBannerPagina1.png);
     background-size: cover;
     width: 20em;
@@ -160,9 +187,10 @@ body {
     padding: 3em;
     position: relative;
     top: 22.5em;
+    left: 1.1em;
     margin: auto;   
 }
-.banner1 h2{
+.banner1 h2, .bannerChristmas h2{
     color: rgb(130, 75, 21);
     font-size: 1.2em;
     margin: 0%;
@@ -175,17 +203,19 @@ body {
     height: 1em;
 }
 
+
 .pecan-birthday {
     text-shadow: 0em 0.1em 0.5em rgba(0, 0, 0, 0.341);
     height: 20em;
 }
-.boyd-birthday{
+.bam-birthday{
     height: 20em;
-    position: absolute;
-    top: 41em;
-    left: 3.45em;
+    position: relative;
+    top: 0em;
+    left: 0em;
+    text-shadow: 0em 0.1em 0.5em rgba(0, 0, 0, 0.341);
 }
-.pecan-birthday button, .boyd-birthday button {
+.pecan-birthday button, .bam-birthday button {
     background: rgb(196, 22, 27);
     border: none;
     border-radius: 40%;
@@ -195,18 +225,24 @@ body {
     top: -12em;
     left: -3.2em;
 }
-.character-pecan-birthday, .character-boyd-birthday {
+.character-pecan-birthday {
     width: 10em;
     position: relative;
     left: -2.5em;
     top: 2.5em;
 }
-.pecan-birthday h2, .boyd-birthday h2{
+.character-bam-birthday {
+    width: 10em;
+    position: relative;
+    left: -4em;
+    top: 2.5em;
+}
+.pecan-birthday h2, .bam-birthday h2{
     text-align: center;
     color: rgb(255, 228, 106);
     font-size: 0.8em;
 }
-.pecan-birthday h3, .boyd-birthday h3{
+.pecan-birthday h3, .bam-birthday h3{
     font-size: 1.2em;
     color: white;
     position: relative;
@@ -225,6 +261,25 @@ body {
     margin: 8em 0em 0em 0.5em;
     width: 21.5em;
     height: 24em;
+    position: relative;
+}
+.animal-crossing-news-1-kerst {
+    font-family: arvo, serif;
+    color: rgb(130, 75, 21);
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8em 0em 0em 0.5em;
+    width: 21.5em;
+    height: 24em;
+    background-image: url(../images/christmasBorder\ Large.png);
+    background-size: cover;
+    background-position: 53%;
+    position: absolute;
+    top: 62em;
 }
 .animal-crossing-news-2 {
     font-family: arvo, serif;
@@ -240,24 +295,78 @@ body {
     width: 21.5em;
     height: 22.7em;
 }
+
+.animal-crossing-news-2-kerst {
+    font-family: arvo, serif;
+    text-decoration: none;
+    color: rgb(130, 75, 21);
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2em 0em 1em 0.5em;
+    width: 21.5em;
+    height: 22.7em;
+    background-image: url(../images/christmasBorder\ Large.png);
+    background-size:29.5em 23em;
+    background-repeat: no-repeat;
+    background-position: 53%;
+    position: absolute;
+    top: 94em;
+}
+
+.animal-crossing-news-3-kerst {
+    font-family: arvo, serif;
+    text-decoration: none;
+    color: rgb(130, 75, 21);
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2em 0em 1em 0.5em;
+    width: 21.5em;
+    height: 22.7em;
+    background-image: url(../images/christmasBorder\ Large.png);
+    background-size:29.5em 23em;
+    background-repeat: no-repeat;
+    background-position: 53%;
+    position: absolute;
+    top: 118em;
+}
 .animal-crossing-news-1 a,
-.animal-crossing-news-2 a {
+.animal-crossing-news-2 a,
+.animal-crossing-news-1-kerst a,
+.animal-crossing-news-2-kerst a,
+.animal-crossing-news-3-kerst a {
     text-decoration: none;
     font-weight: 700;
     color: rgb(196, 22, 27);
 }
 .animal-crossing-news-1 img,
-.animal-crossing-news-2 img {
+.animal-crossing-news-2 img,
+.animal-crossing-news-1-kerst img,
+.animal-crossing-news-2-kerst img,
+.animal-crossing-news-3-kerst img {
     border-radius: 0.8em;
-    width: 20em;
+    width: 18.5em;
 }
 .animal-crossing-news-1 h3,
-.animal-crossing-news-2 h3 {
+.animal-crossing-news-2 h3,
+.animal-crossing-news-1-kerst h3,
+.animal-crossing-news-2-kerst h3,
+.animal-crossing-news-3-kerst h3{
     color: rgb(2, 127, 135);
     font-size: 0.8em;
 }
 .animal-crossing-news-1 p,
-.animal-crossing-news-2 p {
+.animal-crossing-news-2 p,
+.animal-crossing-news-1-kerst p,
+.animal-crossing-news-2-kerst p,
+.animal-crossing-news-3-kerst p {
     width: 16.5em;
     font-weight: 700;
     font-size: 1.1em;
@@ -436,7 +545,7 @@ body {
     font-size: 0.9em;
 }
 .amiibo {
-    height: 62.9em;
+    height: 62.8em;
 }
 
 .amiibo article {
@@ -449,7 +558,18 @@ body {
     width: 10em;
     background-color: rgba(81, 187, 75, 0.583);
     border-radius: 100%;
+}
 
+.sound-icon{
+    width: 3em;
+    background-color: rgba(162, 243, 170, 0.683);
+    border-radius: 100%;
+    position: absolute;
+    top: 232em;
+    left: 0;
+    animation-name: logo-animatie;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .amiibo h2 {
@@ -472,7 +592,6 @@ body {
 .amiibo p{
     font-size: 0.7em;
 }
-
 
 .amiibo li:nth-of-type(1) {
     list-style: none;
@@ -536,7 +655,7 @@ body {
 
 .play-nintendo {
     color: rgb(53, 29, 35);
-    height: 52.3em;
+    height: 52.3em;  
 }
 
 .play-nintendo h2 {
@@ -625,6 +744,27 @@ body {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+.play-nintendo-background{
+    position: absolute;
+    top: 286.5em;
+    z-index: -1;
+    left: -3.8em;
+    animation-name: background-animation;
+    animation-duration: 8s;
+    animation-timing-function:linear;
+   animation-iteration-count: infinite;
+   height: 55em;
+   width: 24em;
+}
+@keyframes background-animation {
+    0%{
+        translate:2em;
+    }
+    100%{
+        translate: 4em;
+    }
+  }
 
 .IsabelleOnTwitter {
     position: relative;
@@ -726,15 +866,16 @@ header {
     height: 6em;
     width: 23.4375em;
     margin-left: -0.5em;
+    position: relative;
 }
 header img{
     position: absolute;
     width: 5.1em;
-    top: 2.9em;
+    top: 3.4em;
     right: 0;
     z-index: 100;
-
 }
+
 .navTweedePagina a {
     text-decoration: none;
     color: white;
@@ -748,7 +889,7 @@ header img{
 .navTweedePagina {
     background-color: rgb(230, 0, 19);
     height: 3.4em;
-    width: 24em;
+    width: 24.4em;
     padding: 0%;
     margin-left: -1em;
     margin-top: -1em;
@@ -783,7 +924,7 @@ header img{
     right:2em;
 }
 
-.reduce-motionbar2 {
+.reduce-motion2 {
     font-family: 'Libre Franklin', sans-serif;
     height: 3.2em;
     width: 22em;
@@ -797,18 +938,15 @@ header img{
     justify-content: flex-start;
     align-items: center;
 }
-.reduce-motionbar2 span{
-    background-color: rgb(15,128,96);
-    width: 10em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-}
-.reduce-motionbar2 button{
+
+.reduce-motion2 label{
     border: none;
+    border-radius: 0.5em;
     background-color:  rgb(15,128,96);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1em;
+    padding: 0.2em 1em 0.2em 0.5em;
 }
 
 .menu{
@@ -923,7 +1061,7 @@ nav img:nth-of-type(2){
 .banner{
     position: relative;
     top: 2.5em;
-    width: 23.5em;
+    width: 23.4em;
     height: 21em;
     margin-left: -0.5em;
     background-image: url(../images/banner2ePagina.png);
@@ -941,9 +1079,9 @@ nav img:nth-of-type(2){
     padding: 2em 1em 1.5em 3em ;
     text-decoration: none;
     color: rgb(110, 96, 71);
-    position: absolute;
-    right: 0;
-    top: 8em;
+    position: sticky;
+    top: 0;
+    margin-right: -5em;
 }
 .welcome {
     height: 29em;
@@ -1116,7 +1254,7 @@ nav img:nth-of-type(2){
     width: 14.8em;
     border-radius: 0.5em;
     position: absolute;
-    top: 8.7em;
+    top: 8.9em;
 }
 
 .islandNews a {
@@ -1163,7 +1301,28 @@ nav img:nth-of-type(2){
     font-weight: 700;
     position: absolute;
     top: 3em;
+    left: 6.7em;
 }
+.birthdayNewHorizon div {
+    width: 17em;
+    height: 15em;
+    background-image: url(../images/movingBirthdayBackground\ Large.png);
+    animation-name:birthday-animation;
+    animation-duration:10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    background-repeat:no-repeat;
+    background-size: 150%;
+}
+
+@keyframes birthday-animation {
+    0% {
+      background-position:left bottom;
+    }
+    100% {
+      background-position:right top;
+    }
+  }
 
 .birthdayNewHorizon h3 {
     color: rgb(234, 224, 133);
@@ -1707,3 +1866,67 @@ nav img:nth-of-type(2){
 }
 
   
+@keyframes enter-animation {
+	0% {
+		transform: translateY(100px);
+    opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+    opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .image-animation {
+      animation: enter-animation 0.8s 1;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .image-animation {
+      animation: none; /* Schakel animaties volledig uit voor verminderde beweging */
+    }
+  }
+
+  .bannerChristmas{
+    background-image: url(../images/christmasBackground.jpeg);
+    background-size: cover;
+    height: 36.5em;
+    width: 23.4em;
+    margin-left: -0.5em;  
+    position: absolute;  
+    top: 5.5em;
+    z-index: 999;
+}
+
+.kerstSwitch, .normaalSwitch{
+    background: white;
+    position: absolute;
+    top: 8em;
+    right: 2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}
+.kerstSwitch img, .normaalSwitch img{
+ width: 3em;
+ position: absolute;
+ top: 0.3em;
+ right: 0.35em;
+}
+
+.movingBackground{
+    width: 23.5em;
+    height: 250em;
+    background-image: url(../images/movingBackgroundFullPage.png);
+    animation-name:birthday-animation;
+    animation-duration:150s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 213em;
+    left: -0.5em;
+}
