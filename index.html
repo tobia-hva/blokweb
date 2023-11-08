@@ -18,10 +18,17 @@
             <img class="account-icon" src="./images/account-icon.jpeg" alt="account icon">Log in / Sign up</a> 
         </article>
         
-        <article class="reduce-motionbar">
-                <button>Reduce motion</button>
-        </article>
+        <div class="reduce-motion">
+            <label class="label" for="reduced-motion-button"> Reduce motion
+                <input type="checkbox" id="reduced-motion-button">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <button class="kerstSwitch"> <img src="./images/kerstSwitch.png" alt="christmas tree"></button>
+        <button class="normaalSwitch"> <img src="./images/kerstSwitch.png" alt="christmas tree"></button>
     </header>
+
+    <main>
     <section class="verstoppen">
         <section class="menu">
                 <button><img src="./images/menuIcon.png" alt="hamburger menu icon">Menu</button>
@@ -41,13 +48,23 @@
                 <img src="./images/Balloon.webp" alt="balloon with a gift tied at the bottom">
             </nav>
     </section>
+ 
+        <section class="bannerChristmas">
+            <h2>Official home of</h2>
+            <img class="image" src="./images/logo-ac.png" alt="logo animal crossing">
+            <img class="image" src="./images/Jingle_NH.webp" alt="Isabelle smiling">
+            <p>Make friends with adorable animal villagers and have fun creating a world of your own in the Animal Crossing series.</p>
+        </section>
+  
     
     <section class="banner1">
         <h2>Official home of</h2>
-        <img src="./images/logo-ac.png" alt="">
-        <img src="./images/IsabelleBanner.png" alt="">
+        <img class="image" src="./images/logo-ac.png" alt="logo animal crossing">
+        <img class="image" src="./images/IsabelleBanner.png" alt="Isabelle smiling">
         <p>Make friends with adorable animal villagers and have fun creating a world of your own in the Animal Crossing series.</p>
     </section>
+
+    
 
     <section class="pecan-birthday">      
         <h2>Today is</h2>
@@ -57,18 +74,31 @@
         <img class="character-pecan-birthday" src="./images/pecans-birthday.png" alt="pecan the character">
 
     </section>
-    <!--  
-    <section class="boyd-birthday">
+    
+    <section class="bam-birthday">
         <h2>Yesterday was</h2>
-        <h3>Boyd's Birthday</h3>
-        <button id="arrowLeft"> <img class="arrow-button" src="./images/pijl-links.png" alt="arrow to the left"></button>
-        <button id="arrowRight"><img class="arrow-button" src="./images/pijl-rechts.png" alt="arrow to the right"></button>
-        <img class="character-boyd-birthday" src="./images/boyd-birthday.png" alt="boyd the character">
+        <h3>Bam's Birthday</h3>
+        <button class="arrowLeft"> <img class="arrow-button" src="./images/pijl-links.png" alt="arrow to the left"></button>
+        <button class="arrowRight2"><img class="arrow-button" src="./images/pijl-rechts.png" alt="arrow to the right"></button>
+        <img class="character-bam-birthday" src="./images/bam-birthday.png" alt="bam the character">
     </section>
--->
 
-    <section>
+
+    <section> 
+        
         <article class="animal-crossing-news-1">
+           
+            <h3>Sep 05, 2023</h3>
+            <p>Nintendo celibrates the holidays early with bundles for Mario Kart 8 Deluxe and Animal Crossing: New
+                Horizons</p>
+            <img src="./images/animal-crossing-news-1.avif" alt="Nintendo switch bundle for mario kart 8 deluxe">
+            <a
+                href="https://animalcrossing.nintendo.com/news/#!/nintendo-celebrates-the-holidays-early-with-bundles-for-mario-kart-8-deluxe-and-animal-crossing-new-horizons">Keep
+                reading> </a>
+        </article>
+
+        <article class="animal-crossing-news-1-kerst">
+           
             <h3>Sep 05, 2023</h3>
             <p>Nintendo celibrates the holidays early with bundles for Mario Kart 8 Deluxe and Animal Crossing: New
                 Horizons</p>
@@ -79,15 +109,35 @@
         </article>
 
         <article class="animal-crossing-news-2">
+            
             <h3>Sep 05, 2023</h3>
             <p>Missions and Rewards: Animal Crossing birthday icons for September</p>
             <img src="./images/animal-crossing-news-2.avif" alt="Nintendo switch bundle for mario kart 8 deluxe">
             <a
                 href="https://animalcrossing.nintendo.com/news/#!/missions-and-rewards-animal-crossing-birthday-icons-september-2023">Keep
-                reading></a>
+                reading></a>  
+        </article>
+
+        <article class="animal-crossing-news-2-kerst">
+            
+            <h3>Sep 05, 2023</h3>
+            <p>Missions and Rewards: Animal Crossing birthday icons for September</p>
+            <img src="./images/animal-crossing-news-2.avif" alt="Nintendo switch bundle for mario kart 8 deluxe">
+            <a
+                href="https://animalcrossing.nintendo.com/news/#!/missions-and-rewards-animal-crossing-birthday-icons-september-2023">Keep
+                reading></a>  
         </article>
 
         <article class="animal-crossing-news-2">
+            <h3>Jul 31, 2023</h3>
+            <p>Missions and Rewards: Animal Crossing birthday icons for August</p>
+            <img src="./images/animal-crossing-news-3.avif" alt="Nintendo switch bundle for mario kart 8 deluxe">
+            <a
+                href="https://animalcrossing.nintendo.com/news/#!/missions-and-rewards-animal-crossing-birthday-icons-august-2023">Keep
+                reading></a>
+        </article>
+
+        <article class="animal-crossing-news-3-kerst">
             <h3>Jul 31, 2023</h3>
             <p>Missions and Rewards: Animal Crossing birthday icons for August</p>
             <img src="./images/animal-crossing-news-3.avif" alt="Nintendo switch bundle for mario kart 8 deluxe">
@@ -112,21 +162,21 @@
 
     <h2 class="featured-h2">Featured Animal Crossing games</h2>
     <section class="featured-ac-games">
-        <article>
+        <article class="image">
             <img src="./images/ac-pocket-camp.png" alt="animal crossing: pocket camp">
             <h4>iOS/Android</h4>
             <h3>Animal Crossing: Pocket Camp</h3>
             <a href="https://ac-pocketcamp.com/en-US">Learn more</a>
         </article>
 
-        <article >
+        <article class="image">
             <img src="./images/welcome-amiibo.png" alt="Animal Crossing: New Leaf - Welcome amiibo">
             <h4>Nintendo 3DS</h4>
             <h3>Animal Crossing: New Leaf - Welcome amiibo</h3>
             <a href="https://ac-pocketcamp.com/en-US">Learn more</a>
         </article>
 
-        <article>
+        <article class="image">
             <img src="./images/happy-home-designer.jpeg" alt="Animal Crossing: Happy Home Designer">
             <h4>Nintendo 3DS</h4>
             <h3>Animal Crossing: Happy Home Designer </h3>
@@ -154,23 +204,25 @@
         <p>Click on Isabelle for a surprise!</p>
         <article>
             <ul>
-                <li><img src="./images/amiibo-isabelle.png" alt="isabelle amiibo">
+                <li><img class="image" src="./images/amiibo-isabelle.png" alt="isabelle amiibo">
                     <button>Isabelle - Summer Outfit</button>
                 </li>
-                <li><img src="./images/amiibo-kapn.png" alt="kapp'n amiibo">
+                <li><img class="image" src="./images/amiibo-kapn.png" alt="kapp'n amiibo">
                     <button>Kapp'n</button>
                 </li>
-                <li><img src="./images/amiibo-rover.png" alt="rover amiibo">
+                <li><img class="image" src="./images/amiibo-rover.png" alt="rover amiibo">
                     <button>Rover</button>
                 </li>
-                <li><img src="./images/amiibo-timmytommy.png" alt="timmy and tommy amiibo">
+                <li><img class="image" src="./images/amiibo-timmytommy.png" alt="timmy and tommy amiibo">
                     <button>Timmy and Tommy</button>
                 </li>
             </ul>
         </article>
         <a href="https://animalcrossing.nintendo.com/amiibo/#welcome">View amiibo catalog</a>
     </section>
-
+    <div>
+        <img class="sound-icon" src="./images/sound-icon.png" alt="sound on icon">
+    </div>
     <section class="play-nintendo">
         <h2>Isabelle and friends on Play Nintendo</h2>
         <article >
@@ -214,13 +266,15 @@
                 </article>
             </a>
         </article>
-        
+        <img class="play-nintendo-background" src="./images/play-nintendo-background.jpeg" alt="">
     </section>
 
     <section class="IsabelleOnTwitter">
         <h2>Follow Isabelle on<a href="https://twitter.com/animalcrossing">Twitter</a></h2>
         <img src="./images/char-lyle.png" alt="char-lyle holding a tablet">
     </section>
+</main>
+
     <footer class="footer1">
         <a href="https://en-americas-support.nintendo.com/">Customer Support</a>
         <img src="./images/logo-amiibo.svg" alt="amiibo logo">
